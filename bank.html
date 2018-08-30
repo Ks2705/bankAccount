@@ -1,0 +1,213 @@
+Video.html
+
+<html>
+<body bgcolor="pink">
+	<video width="320" height="240" controls>
+		<source src="1.mp4" type="video/mp4" />
+	</video>
+	<br />
+	<br />
+	<button>Play</button>&nbsp;&nbsp;
+	<button>Pause</button>&nbsp;&nbsp;
+	<button>Mute</button>
+	<br />
+	<br />
+	<label>
+		Volume:<input type="range" min="0" max="100" step="5" />
+	</label>
+	<br />
+	<br />
+	<label>
+		Time elapsed:<input type="range" min="0" max="100" step="1" />
+	</label>
+</body>
+</html>
+
+
+ex2.html
+
+<html>
+<body bgcolor="pink">
+<form action="ex.html" method="get">
+	<title>Registration Form</title>
+	<fieldset>
+		<legend>Account Information</legend>
+		<label>
+			User Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" size="40" />
+		</label>
+		<br />
+		<br />
+		<label>
+			Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pass" size="40" />
+		</label>
+		<br />
+		<br />
+		<label>
+			Confirm Password:&nbsp;&nbsp;&nbsp;<input type="password" name="cpass" size="40" />
+		</label>
+		<br />
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<meter value="4" min="0" max="10">2 out of 10</meter>
+		<br />
+		<br />
+		<label>
+			Credit Card Number:<input type="text" name="cnum" size="40" />
+		</label>
+		<br />
+		<br />
+	</fieldset>
+	<fieldset>
+		<legend>Personal Information</legend>
+		<label>
+			Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="name" name="name" size="40" />
+		</label>
+		<br />
+		<br />
+		<label>
+			Date of Birth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="dob" size="40" />
+		</label>
+		<br />
+		<br />
+		<label>
+			Favourite Color:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="color" name="colo" size="40" />
+		</label>
+		<br />
+		<br />
+		<label>
+			Profile Photo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="photo" accept="image" />
+		</label>
+		<br />
+		<br />
+		<label>
+			Favourite Browser:&nbsp;&nbsp;&nbsp;<input type="text" name="browser" size="40" />
+		</label>
+		<br />
+		<br />
+		</fieldset>
+		<fieldset>
+			<legend>Company Information</legend>
+			<label>
+				No of employee:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="emp" size="40" />
+			</label>
+			<br />
+			<br />
+			<label>
+				Estimated revenue:&nbsp;&nbsp;&nbsp;<input type="range" min="1" max="50" step="1" />
+			</label>
+			<br />
+			<br />
+		</fieldset>
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label>
+				Email address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" size="40" placeholder="example@gmail.com" />
+			</label>
+			<br />
+			<br />
+			<label>
+				Phone Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="phn" size="40" placeholder="9876543210" />
+			</label>
+			<br />
+			<br />
+			<label>
+				Website:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="url" name="url" size="40" placeholder="www.google.com" />
+			</label>
+			<br />
+			<br />
+		</fieldset>
+		<button>Submit With Validation</button>&nbsp;&nbsp;&nbsp;&nbsp;
+		<button>Sumbit Without Validation</button>
+</form>
+</body>
+</html>
+
+
+table.html
+
+<html>
+<body bgcolor="pink">
+	<table border="5">
+		<tr>
+			<td rowspan="10"><b>Outer table</b></td>
+			<td colspan="9" align="center"> <b>An inner table showing a variety of headings and data items</b> </td>
+		</tr>
+		<tr>
+			<td colspan="9" align="center"><b>INNER TABLE</b></td>
+		</tr>
+		<tr>
+			<td colspan="4" rowspan="2" align="center"><b>CORNER</b></td>
+			<td colspan="5" align="center"><b>HEAD1</b></td>
+		</tr>
+		<tr>
+			<td colspan="3" rowspan="2" align="center"><b>HEAD2</b></td>
+			<td colspan="2" align="center"><b>HEAD3</b></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><b>HEAD4</b></td>
+			<td colspan="2" align="center"><b>HEAD5</b></td>
+			<td colspan="2" align="center"><b>HEAD6</b></td>
+		</tr>
+		<tr>
+			<td colspan="2"> A </td>
+			<td rowspan="6" bgcolor="red" align="center">Two Tall</td>
+			<td bgcolor="green">
+				<ul>
+					<li>
+						Lists can be table data
+					</li>
+					<li>
+						Images can be table data
+					</li>
+				</ul>
+			</td>
+			<td colspan="4"> Two Wide </td>
+		</tr>
+		<tr>
+			<td rowspan="4" colspan="2"><input type="text" size="0.2" /></td>
+			<td> A <a href="Profile.html" target="main"> Form </a> in a table: <br /> Your age: <input type="text" size="0.2" /> <br />What is your favourite ice cream? <br /> Chocolate <br/> <button> ok </button> <button> Cancel </button></td>
+			<td rowspan="4" colspan="2"> No border little table</td>
+			<td rowspan="4" colspan="2">Multiple line item</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+opt.html
+
+<html>
+<body bgcolor="pink">
+	<label>OptGroup</label>
+	<br/>
+	<br/>
+	<select>
+		<optgroup label="Programming Language">
+		<option value="C"> C </option>
+		<option value="C++"> C++ </option>
+		<option value="Java"> Java </option>
+		<option value="C#" > C# </option>
+		</optgroup>
+		<optgroup label="Language">
+		<option value="Tamil"> Tamil </option>
+		<option value="English"> English </option>
+		<option value="Hindi"> Hindi </option>
+		<option value="Urdu" > Urdu </option>
+		</optgroup>
+		<optgroup label="Gender">
+		<option value="Male"> Male </option>
+		<option value="Female"> Female </option>
+		</optgroup>
+	</select>
+	<br/>
+	<br/>
+	<label>DataList</label>
+	<br/>
+	<br/>
+	<input type="text" list="languages">
+  	<datalist id="languages">
+  		<option value="HTML">
+  		<option value="C">
+  		<option value="C#">
+  		<option value="C++">
+	</datalist>
+</body>
+</html>
